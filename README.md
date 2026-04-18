@@ -4,15 +4,15 @@ Deploys a **Linear Regression** model (trained on NYC Yellow Taxi data) as a con
 
 ## Prerequisites
 
-- Python 3.11+
-- Docker Desktop (running)
+- Python
+- Docker Desktop
 - Git
 
 ## Project Structure
 
 ```
 assignment4/
-├── assignment4.ipynb     # Full walkthrough notebook
+├── assignment4.ipynb     
 ├── app.py                # FastAPI application
 ├── test_app.py           # pytest test suite
 ├── Dockerfile            # Container recipe
@@ -21,7 +21,7 @@ assignment4/
 ├── README.md
 ├── .gitignore
 ├── .dockerignore
-└── models/               # Saved model files (gitignored)
+└── models/               
     ├── linear_regression.pkl
     └── scaler.pkl
 ```
@@ -52,7 +52,9 @@ Visit http://localhost:8000/docs for the interactive Swagger UI.
 pytest test_app.py -v
 ```
 
-### 5 – Run with Docker Compose (full stack)
+### 5 – Run with Docker Compose
+
+**API image size:** 1.26 GB (286 MB content size)
 
 ```bash
 docker compose up --build
