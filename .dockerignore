@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.git/
+.gitignore
+data/
+*.parquet
+*.csv
+mlruns/
+.env
+*.ipynb
+*.md
+.pytest_cache/
+test_app.py
